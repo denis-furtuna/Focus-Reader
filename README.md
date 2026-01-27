@@ -14,10 +14,8 @@
 
 ## 📱 Interface Preview
 
-## 📱 Interface Preview
-
 <p align="center">
-  <img src="Citire-rapida/Assets/MainPage1.png" width="250" style="border-radius: 15px;" />
+  <img src="Citire-rapida/Assets/MainPage.png" width="250" style="border-radius: 15px;" />
   <img src="Citire-rapida/Assets/ReadPage1.png" width="250" style="border-radius: 15px;" />
   <img src="Citire-rapida/Assets/ReadPage2.png" width="250" style="border-radius: 15px;" />
 </p>
