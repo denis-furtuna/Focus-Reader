@@ -14,8 +14,12 @@
 
 ## 📱 Interface Preview
 
+## 📱 Interface Preview
+
 <p align="center">
-  <img src="https://via.placeholder.com/300x600?text=App+Screenshot+Here" width="250" alt="Focus Reader UI" style="border-radius: 15px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);" />
+  <img src="Assets/MainPage1.png" width="250" style="border-radius: 15px;" />
+  <img src="Assets/ReadPage1.png" width="250" style="border-radius: 15px;" />
+  <img src="Assets/ReadPage2.png" width="250" style="border-radius: 15px;" />
 </p>
 
 ---
