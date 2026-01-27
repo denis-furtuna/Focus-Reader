@@ -44,7 +44,7 @@
 
 ## 🔒 License
 
-**Copyright © 2024 Furtună Denis-Andrei. All Rights Reserved.**
+**Copyright © 2026 Furtună Denis-Andrei. All Rights Reserved.**
 This code is for demonstration purposes only. Redistribution or modification is strictly prohibited.
 
 ---
