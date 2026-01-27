@@ -38,7 +38,7 @@
 ## 🛠️ Technical Stack
 
 * **Framework:** .NET MAUI (Multi-platform App UI) 8.0/9.0
-* **Language:** C#
+* **Languages:** C#, XAML
 * **Architecture:** MVVM Pattern (Model-View-ViewModel) concepts
 * **Async/Await:** Heavy usage for non-blocking UI during animations and file processing.
 
