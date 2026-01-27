@@ -1,51 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Focus Reader | Speed Reading App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body class="bg-black text-white font-sans">
-
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-        <h1 class="text-2xl font-bold text-red-600">Focus<span class="text-white">Reader</span></h1>
-        <a href="https://github.com/denis-furtuna/Focus-Reader" class="hover:text-red-500 transition"><i class="fab fa-github text-2xl"></i></a>
-    </nav>
-
-    <header class="py-20 px-6 text-center max-w-4xl mx-auto">
-        <h2 class="text-5xl md:text-7xl font-extrabold mb-6">Read Faster. <span class="text-red-600">Focus Better.</span></h2>
-        <p class="text-gray-400 text-xl mb-10">A high-performance RSVP speed reading application built with .NET MAUI. Eliminate subvocalization and master your reading flow.</p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <a href="https://github.com/denis-furtuna/Focus-Reader/releases/download/v1.0/Focus-Reader.apk" class="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-lg shadow-red-900/20">Download APK</a>
-            <a href="#features" class="bg-zinc-900 hover:bg-zinc-800 text-white px-8 py-4 rounded-full font-bold text-lg border border-zinc-700 transition">Explore Features</a>
-        </div>
-    </header>
-
-    <section id="features" class="py-20 bg-zinc-950">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
-            <div class="text-center p-8 bg-black border border-zinc-800 rounded-3xl">
-                <i class="fas fa-bolt text-red-600 text-4xl mb-6"></i>
-                <h3 class="text-2xl font-bold mb-4">RSVP Engine</h3>
-                <p class="text-gray-400">Rapid Serial Visual Presentation minimizes eye movement for maximum speed.</p>
+<section id="features" class="py-24 bg-zinc-950">
+        <div class="max-w-6xl mx-auto px-6">
+            
+            <div class="text-center mb-20">
+                <h2 class="text-4xl font-bold mb-4">Master Your <span class="text-red-600">Cognitive Flow</span></h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">Focus Reader isn't just an app; it's a tool engineered to optimize how your brain processes information.</p>
             </div>
-            <div class="text-center p-8 bg-black border border-zinc-800 rounded-3xl">
-                <i class="fas fa-file-pdf text-red-600 text-4xl mb-6"></i>
-                <h3 class="text-2xl font-bold mb-4">PDF Support</h3>
-                <p class="text-gray-400">Extract text instantly from any PDF document and start reading.</p>
+
+            <div class="flex flex-col md:flex-row items-center gap-16 mb-24">
+                <div class="flex-1 space-y-6">
+                    <div class="w-12 h-12 bg-red-900/20 rounded-xl flex items-center justify-center border border-red-900/50">
+                        <i class="fas fa-bolt text-red-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold">High-Performance RSVP Engine</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Say goodbye to subvocalization. Our <strong>Rapid Serial Visual Presentation</strong> algorithm displays words at a fixed Optical Recognition Point (ORP), allowing you to read up to 1000 words per minute without moving your eyes.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Adjustable WPM (Words Per Minute)</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Dark Mode for reduced eye strain</li>
+                    </ul>
+                </div>
+                <div class="flex-1 relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-red-600 to-red-900 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <img src="https://github.com/denis-furtuna/Focus-Reader/raw/master/Citire-rapida/Assets/ReadPage1.png" 
+                         alt="Reading Interface" 
+                         class="relative rounded-2xl border border-zinc-800 shadow-2xl w-full transform group-hover:-translate-y-2 transition duration-500">
+                </div>
             </div>
-            <div class="text-center p-8 bg-black border border-zinc-800 rounded-3xl">
-                <i class="fas fa-dice text-red-600 text-4xl mb-6"></i>
-                <h3 class="text-2xl font-bold mb-4">Practice Mode</h3>
-                <p class="text-gray-400">Animated dice system to generate random educational content for training.</p>
+
+            <div class="flex flex-col md:flex-row-reverse items-center gap-16 mb-24">
+                <div class="flex-1 space-y-6">
+                    <div class="w-12 h-12 bg-blue-900/20 rounded-xl flex items-center justify-center border border-blue-900/50">
+                        <i class="fas fa-file-pdf text-blue-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold">Intelligent PDF Parsing</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Powered by the robust <strong>PdfPig</strong> library, Focus Reader extracts pure text from complex PDF documents instantly. We strip away formatting and distractions, leaving only the content that matters.
+                    </p>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Works with local files</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-green-500"></i> Instant text extraction</li>
+                    </ul>
+                </div>
+                <div class="flex-1 relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-blue-900 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <img src="https://github.com/denis-furtuna/Focus-Reader/raw/master/Citire-rapida/Assets/ReadPage2.png" 
+                         alt="PDF Feature" 
+                         class="relative rounded-2xl border border-zinc-800 shadow-2xl w-full transform group-hover:-translate-y-2 transition duration-500">
+                </div>
             </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-16">
+                <div class="flex-1 space-y-6">
+                    <div class="w-12 h-12 bg-purple-900/20 rounded-xl flex items-center justify-center border border-purple-900/50">
+                        <i class="fas fa-dice text-purple-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold">Gamified Learning</h3>
+                    <p class="text-gray-400 text-lg leading-relaxed">
+                        Need practice material? Roll the 3D Dice. We use advanced animations (`RotateTo`) and async tasks to generate random educational snippets, making speed reading practice fun and engaging.
+                    </p>
+                </div>
+                <div class="flex-1 relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-purple-900 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <img src="https://github.com/denis-furtuna/Focus-Reader/raw/master/Citire-rapida/Assets/MainPage.png" 
+                         alt="Dice Game" 
+                         class="relative rounded-2xl border border-zinc-800 shadow-2xl w-full transform group-hover:-translate-y-2 transition duration-500">
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <footer class="py-10 text-center text-gray-600 border-t border-zinc-900">
-        <p>© 2026 Furtună Denis-Andrei. All Rights Reserved.</p>
-    </footer>
-
-</body>
-</html>
+    <section class="py-16 bg-black border-t border-zinc-900">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p class="text-gray-500 mb-8 font-mono text-sm uppercase tracking-widest">Built with Modern Technologies</p>
+            <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-70 grayscale hover:grayscale-0 transition duration-500">
+                <div class="flex items-center gap-2">
+                    <i class="fab fa-microsoft text-2xl text-blue-500"></i>
+                    <span class="font-bold text-xl">.NET MAUI</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-code text-2xl text-green-500"></i>
+                    <span class="font-bold text-xl">C#</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fab fa-android text-2xl text-green-400"></i>
+                    <span class="font-bold text-xl">Android</span>
+                </div>
+                 <div class="flex items-center gap-2">
+                    <i class="fas fa-book text-2xl text-red-400"></i>
+                    <span class="font-bold text-xl">PdfPig</span>
+                </div>
+            </div>
+        </div>
+    </section>
