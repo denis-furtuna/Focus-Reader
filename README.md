@@ -2,9 +2,10 @@
 
 ![.NET MAUI](https://img.shields.io/badge/.NET_MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
-![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Android](https://img.shields.io/badge/Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+![iOS](https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=apple&logoColor=white)
 ![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 
 **Focus Reader** is a high-performance speed reading application developed to enhance cognitive processing using the **RSVP (Rapid Serial Visual Presentation)** methodology.
 
@@ -15,7 +16,9 @@
 ## 📱 Interface Preview
 
 <p align="center">
-  <img src="https://via.placeholder.com/300x600?text=App+Screenshot+Here" width="250" alt="Focus Reader UI" style="border-radius: 15px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);" />
+  <img src="Citire-rapida/Assets/MainPage.png" width="250" style="border-radius: 15px;" />
+  <img src="Citire-rapida/Assets/ReadPage1.png" width="250" style="border-radius: 15px;" />
+  <img src="Citire-rapida/Assets/ReadPage2.png" width="250" style="border-radius: 15px;" />
 </p>
 
 ---
