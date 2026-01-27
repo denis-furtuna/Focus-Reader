@@ -89,7 +89,9 @@ public partial class ReadPage : ContentPage
                 currentIndex++;
             }
             ReadingProgress.Progress = (double)currentIndex / words.Length;
-            await Task.Delay(delayMilliseconds);
+            if (words[currentIndex-1][^1] == ',') await Task.Delay((int)(delayMilliseconds * 2));
+            else if (words[currentIndex-1][^1] =='.' ) await Task.Delay(delayMilliseconds*3);
+            else await Task.Delay(delayMilliseconds);
         }
         isPlaying = false;
         Start = false;
