@@ -1,1 +1,46 @@
-# Citire-rapida
+# 📚 Focus Reader
+
+![.NET MAUI](https://img.shields.io/badge/.NET_MAUI-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)
+![License](https://img.shields.io/badge/License-Proprietary-red?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+
+**Focus Reader** is a high-performance speed reading application developed to enhance cognitive processing using the **RSVP (Rapid Serial Visual Presentation)** methodology.
+
+> ⚠️ **Note:** This project is a portfolio piece. The source code is proprietary and all rights are reserved.
+
+---
+
+## 📱 Interface Preview
+
+<p align="center">
+  <img src="https://via.placeholder.com/300x600?text=App+Screenshot+Here" width="250" alt="Focus Reader UI" style="border-radius: 15px; box-shadow: 0px 4px 10px rgba(0,0,0,0.5);" />
+</p>
+
+---
+
+## 🚀 Key Features
+
+* **⚡ RSVP Engine:** Custom algorithm minimizing saccadic eye movements.
+* **🎲 Gamified Learning:** Interactive 3D dice animation (using `RotateTo` & async tasks) generating educational content.
+* **🧠 Cognitive Load Optimization:**
+    * **Dark Mode UI:** High contrast layout (Black/Red/White) to reduce eye strain.
+    * **Fixed Focus Point:** Optical Recognition Point (ORP) highlighted in red for stability.
+* **📄 PDF Parsing:** Integrated `PdfPig` library for extracting text from external documents.
+* **🔧 Adaptive Layout:** Responsive `Grid` system ensuring stability across different device aspect ratios.
+
+## 🛠️ Technical Stack
+
+* **Framework:** .NET MAUI (Multi-platform App UI) 8.0/9.0
+* **Language:** C#
+* **Architecture:** MVVM Pattern (Model-View-ViewModel) concepts
+* **Async/Await:** Heavy usage for non-blocking UI during animations and file processing.
+
+## 🔒 License
+
+**Copyright © 2024 Furtună Denis-Andrei. All Rights Reserved.**
+This code is for demonstration purposes only. Redistribution or modification is strictly prohibited.
+
+---
+*Created with passion by Furtună Denis-Andrei*
