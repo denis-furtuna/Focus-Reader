@@ -38,13 +38,13 @@
 ## 🛠️ Technical Stack
 
 * **Framework:** .NET MAUI (Multi-platform App UI) 8.0/9.0
-* **Language:** C#
+* **Languages:** C#, XAML
 * **Architecture:** MVVM Pattern (Model-View-ViewModel) concepts
 * **Async/Await:** Heavy usage for non-blocking UI during animations and file processing.
 
 ## 🔒 License
 
-**Copyright © 2024 Furtună Denis-Andrei. All Rights Reserved.**
+**Copyright © 2026 Furtună Denis-Andrei. All Rights Reserved.**
 This code is for demonstration purposes only. Redistribution or modification is strictly prohibited.
 
 ---
