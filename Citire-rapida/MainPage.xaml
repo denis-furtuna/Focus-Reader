@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Citire_rapida.MainPage"
+             BackgroundColor="Black"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="Auto, Auto, *, Auto" Padding="30" RowSpacing="15">
+
+        <VerticalStackLayout Grid.Row="0" Spacing="5" HorizontalOptions="Center">
+            <Image Source="logo.png"
+                   HeightRequest="120"
+                   WidthRequest="120" />
+            <Label Text="FOCUS READER"
+                   FontSize="14"
+                   TextColor="Red"
+                   CharacterSpacing="5"
+                   HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        <Grid Grid.Row="1" ColumnDefinitions="*, Auto" VerticalOptions="End">
+            <Label Text="Paste your text or PDF:"
+                   FontSize="18" 
+                   TextColor="White" 
+                   VerticalOptions="Center"
+                   Grid.Column="0"/>
+
+            <Border x:Name="DiceView"
+                    Grid.Column="1"
+                    Stroke="White"
+                    StrokeThickness="2"
+                    StrokeShape="RoundRectangle 8"
+                    BackgroundColor="Transparent"
+                    HeightRequest="40"
+                    WidthRequest="40"
+                    HorizontalOptions="End">
+
+                <Border.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnRandomTextClicked"/>
+                </Border.GestureRecognizers>
+
+                <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*,*" Padding="4">
+                    <BoxView x:Name="DotTL" Grid.Row="0" Grid.Column="0" Color="#FF3333" CornerRadius="2" Margin="1" HeightRequest="6" WidthRequest="6" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <BoxView x:Name="DotTR" Grid.Row="0" Grid.Column="2" Color="#FF3333" CornerRadius="2" Margin="1" HeightRequest="6" WidthRequest="6" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <BoxView x:Name="DotML" Grid.Row="1" Grid.Column="0" Color="#FF3333" CornerRadius="2" Margin="1" HeightRequest="6" WidthRequest="6" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+                    <BoxView x:Name="DotC"  Grid.Row="1" Grid.Column="1" Color="#FF3333" CornerRadius="2" Margin="1" HeightRequest="6" WidthRequest="6" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <BoxView x:Name="DotMR" Grid.Row="1" Grid.Column="2" Color="#FF3333" CornerRadius="2" Margin="1" HeightRequest="6" WidthRequest="6" HorizontalOptions="Center" VerticalOptions="Center" IsVisible="False"/>
+                    <BoxView x:Name="DotBL" Grid.Row="2" Grid.Column="0" Color="#FF3333" CornerRadius="2" Margin="1" HeightRequest="6" WidthRequest="6" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <BoxView x:Name="DotBR" Grid.Row="2" Grid.Column="2" Color="#FF3333" CornerRadius="2" Margin="1" HeightRequest="6" WidthRequest="6" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Border Grid.Row="2" 
+                Stroke="White" 
+                StrokeThickness="1" 
+                StrokeShape="RoundRectangle 10" 
+                VerticalOptions="Fill" 
+                HorizontalOptions="Fill">
+
+            <ScrollView VerticalScrollBarVisibility="Always">
+                <Editor x:Name="InputText"
+                        Placeholder="Type or paste here..."
+                        PlaceholderColor="DimGray" 
+                        TextColor="White"
+                        FontSize="16" 
+                        BackgroundColor="Transparent"
+                        AutoSize="TextChanges" 
+                        VerticalOptions="Start" 
+                        HorizontalOptions="Fill"
+                        VerticalTextAlignment="Start" />
+            </ScrollView>
+        </Border>
+
+        <ActivityIndicator x:Name="LoadingSpinner" Grid.Row="2" IsRunning="False" IsVisible="False"
+                           Color="Red" HorizontalOptions="Center" VerticalOptions="Center" />
+
+        <VerticalStackLayout Grid.Row="3" Spacing="15">
+            <Button x:Name="Read"
+                    Text="START READING"
+                    BackgroundColor="#CC0000" 
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CharacterSpacing="2"
+                    HeightRequest="60"
+                    CornerRadius="30"
+                    Clicked="OnRead" />
+
+            <Button x:Name="PickPdfButton"
+                    Text="UPLOAD PDF"
+                    BackgroundColor="Transparent"
+                    BorderColor="White"
+                    BorderWidth="1"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CharacterSpacing="2"
+                    HeightRequest="60"
+                    CornerRadius="30"
+                    Clicked="OnPickPdfClicked" />
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>

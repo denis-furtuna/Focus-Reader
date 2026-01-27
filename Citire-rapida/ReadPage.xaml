@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Citire_rapida.ReadPage"
+             Title="ReadPage"
+             BackgroundColor="Black"
+             Padding="0,20,0,20"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="*, Auto">
+
+        <Grid Grid.Row="0" VerticalOptions="Center" HeightRequest="120">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <BoxView Grid.ColumnSpan="2" HeightRequest="1" Color="Gray" 
+                     VerticalOptions="Start" HorizontalOptions="Fill" />
+
+            <BoxView Grid.ColumnSpan="2" HeightRequest="1" Color="Gray" 
+                     VerticalOptions="End" HorizontalOptions="Fill" />
+
+            <Grid Grid.Column="0" VerticalOptions="FillAndExpand" ColumnSpacing="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <BoxView Grid.Column="1" WidthRequest="3" HeightRequest="15" 
+                         Color="Gray" HorizontalOptions="Center" VerticalOptions="Start" />
+
+                <BoxView Grid.Column="1" WidthRequest="3" HeightRequest="15" 
+                         Color="Gray" HorizontalOptions="Center" VerticalOptions="End" />
+
+                <Label x:Name="Part1Label" Grid.Column="0" 
+                       HorizontalTextAlignment="End" VerticalTextAlignment="Center"
+                       FontSize="28" FontAttributes="Bold" TextColor="White"
+                       LineBreakMode="NoWrap" />
+
+                <Label x:Name="OrpLabel" Grid.Column="1" 
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                       FontSize="28" FontAttributes="Bold" TextColor="Red" 
+                       LineBreakMode="NoWrap" Padding="0" />
+
+                <Label x:Name="Part2Label" Grid.Column="2" 
+                       HorizontalTextAlignment="Start" VerticalTextAlignment="Center"
+                       FontSize="28" FontAttributes="Bold" TextColor="White"
+                       LineBreakMode="NoWrap" />
+            </Grid>
+        </Grid>
+
+        <VerticalStackLayout Grid.Row="1" HorizontalOptions="Center" Spacing="15" Margin="0,0,0,20">
+            <Label x:Name="ValueLabel" Text="Words per minute: 50" TextColor="White" 
+                   HorizontalOptions="Center" FontSize="18" />
+
+            <Slider x:Name="MySlider" Minimum="50" Maximum="900" Value="50" WidthRequest="300"
+                    HorizontalOptions="Center" ThumbColor="Red" MinimumTrackColor="Red"
+                    ValueChanged="OnSliderValueChanged"/>
+
+            <ProgressBar x:Name="ReadingProgress"
+                         Progress="0"
+                         ProgressColor="Cyan"
+                         VerticalOptions="End"
+                         HeightRequest="5" />
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="10">
+                <Button x:Name="StartButton" Text="Start" BackgroundColor="Lime" Clicked="OnStartButtonClicked" />
+                <Button x:Name="StopButton" Text="Stop" BackgroundColor="DimGray" Clicked="OnStopButtonClicked" />
+                <Button x:Name="RestartButton" Text="Restart" BackgroundColor="DimGray" Clicked="OnRestartButtonClicked" />
+                <Button x:Name="BackButton" Text="Back 10" BackgroundColor="DimGray" Clicked="OnBackButtonClicked" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+
+    </Grid>
+</ContentPage>
